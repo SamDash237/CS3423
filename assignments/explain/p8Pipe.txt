@@ -1,0 +1,1 @@
+pipe Data2/one < Data2/oneIn.txt , Data2/two > Dout2/pipeTwo.out

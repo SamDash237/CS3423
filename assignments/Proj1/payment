@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Enter email: " email
+read -p "Enter payment amount: " payamount
+
+export payamount
+
+if [ -f Data/$email ]; then 
+    ./pay2.bash < Data/${email}
+else 
+    echo "Error: customer not found"
+fi
+exit

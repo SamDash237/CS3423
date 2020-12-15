@@ -1,0 +1,21 @@
+#!bin/bash
+# create a customer file
+
+cd Data
+
+read -p "Enter email: " email
+read -p "Enter customer name: " name
+read -p "Enter apartment number: " aptnum
+read -p "Enter monthly rent amount: " rent
+read -p "Enter next due date: " nextdue
+
+accbal=0
+
+if [ -e "$email" ]; then
+    echo "Error: customer already exists"
+    exit 1
+else
+   # cat  $email $name $aptnum $rent $nextdue $accbal > $email
+    echo "$email $name" > $email
+    echo "$aptnum $rent $accbal $nextdue " >> $email
+fi

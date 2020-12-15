@@ -1,0 +1,4 @@
+My name is Sam Dash
+I am running this script from /home/eeo072/courses/cs3423/assignments
+My username is eeo072
+I am logged in to gnu022

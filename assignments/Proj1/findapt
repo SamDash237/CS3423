@@ -1,0 +1,12 @@
+#!/bin/bash
+# find customer by apartment number
+
+read -p "Enter apartment number: " aptnum
+
+if grep -q $aptnum Data/*; then
+
+    path=$(grep -l $aptnum Data/*)
+    bash findapt2.bash<$path
+ else
+    echo "Error: apartment number not found"
+fi

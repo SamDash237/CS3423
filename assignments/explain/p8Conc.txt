@@ -1,0 +1,1 @@
+conc Data2/one < Data2/oneIn.txt > Dout2/concOne.out , Data2/two < Data2/twoIn.txt > Dout2/concTwo.out , Data2/three < Data2/threeIn.txt > Dout2/concThree.out , Data2/four < Data2/fourIn.txt > Dout2/concFour.out

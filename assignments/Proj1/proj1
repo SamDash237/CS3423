@@ -1,0 +1,25 @@
+#!/bin/bash
+# menu interface
+
+while [ 0 ]
+do
+echo -e "Enter one of the following actions or press CTRL-D to exit."
+echo  "C - create a customer file"
+echo  "P - accept a customer payment"
+echo  "F - find customer by apartment number"
+
+read action
+
+if [ "$action" == "C" ];then
+     bash create
+elif [ "$action" == "P" ] 
+then
+     bash payment
+elif [ "$action" == "F" ]
+then
+     bash findapt
+else
+    echo "Error: invalid action value"
+    break
+fi
+done
